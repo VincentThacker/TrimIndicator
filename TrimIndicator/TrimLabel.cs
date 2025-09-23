@@ -38,8 +38,7 @@ namespace TrimIndicator
 			_sliderAmplitude = isVertical ? VerticalSliderAmplitude : HorizontalSliderAmplitude;
 			var textAlignment = isVertical ? TextAlignmentOptions.BaselineLeft : TextAlignmentOptions.Baseline;
 
-			var baseObject = MakeDummyObject(parent, location);
-			_slider = MakeDummyObject(baseObject);
+			_slider = MakeDummyObject(MakeDummyObject(parent, location));
 
 			_textMeshes = new[]
 			{

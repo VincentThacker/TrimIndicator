@@ -1,10 +1,9 @@
 {
   "NAME": "TrimIndicator",
-  "URL": "http://ksp-avc.cybutek.net/version.php?id=507",
-  "DOWNLOAD": "https://github.com/formicant/TrimIndicator/releases",
+  "DOWNLOAD": "https://github.com/VincentThacker/TrimIndicator/releases",
   "GITHUB":
   {
-    "USERNAME": "formicant",
+    "USERNAME": "VincentThacker",
     "REPOSITORY": "TrimIndicator",
     "ALLOW_PRE_RELEASE": false
   },
