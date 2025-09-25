@@ -30,8 +30,6 @@ namespace TrimIndicator
         const float VerticalSliderAmplitude = 49f;
         const double SliderPositionSteepness = 20;
 
-        const float Step = 0.01f;
-
         public TrimLabel(GameObject parent, Vector3 location, bool isVertical)
 		{
 			_sliderDirection = isVertical ? Vector3.up : Vector3.right;
@@ -52,7 +50,7 @@ namespace TrimIndicator
 		{
 			if(value != _lastValue)
 			{
-				float steps = (float)(value / Step);
+				float steps = value * 100;
 				string text = steps != 0 ? (steps < 0 ? "−" : "+") + Math.Abs(steps).ToString("##0.00", CultureInfo.InvariantCulture) : string.Empty;
 
 				_slider.transform.localPosition = _sliderAmplitude * GetSliderPosition(value) * _sliderDirection;
